@@ -98,7 +98,7 @@ Content-Type: application/json
   "location": "New York",
   "job_title": "Developer",
   "company": "TechCorp",
-  "interests": "Coding, AI",
+  "interests": ["Coding", "AI"],
   "referral_source": "Google Ads"
 }
 ```
