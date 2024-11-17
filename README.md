@@ -25,7 +25,7 @@ A TypeScript boilerplate for creating a Squeeze Page API using Express.js, TypeO
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/ts-squeeze-api-boilerplate.git
+git clone https://github.com/SamixYasuke/ts-squeeze-api-boilerplate.git
 cd ts-squeeze-api-boilerplate
 ```
 
@@ -111,9 +111,7 @@ GET /api/squeezes/:id
 ---
 
 ## Scripts
-- **`npm run dev`**: Run the server in development mode with hot reloading.
-- **`npm run build`**: Build the project for production.
-- **`npm start`**: Start the production server.
+- **`yarn dev`**: Run the server in development mode with hot reloading.
 
 ---
 
