@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 {
   "exec": "ts-node ./src/app.ts",
   "ext": ".ts"
 }
+=======
+{
+  "exec": "ts-node ./src/app.ts",
+  "ext": ".ts"
+}
+>>>>>>> c354b41d65e97ce570f3e20585d41ef4ad1c1639
