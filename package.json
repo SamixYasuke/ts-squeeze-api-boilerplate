@@ -16,10 +16,6 @@
     "test": "jest",
     "prepare": "husky install"
   },
-  "keywords": [
-    "typescript",
-    "node"
-  ],
   "author": "Adekolu Samuel",
   "license": "MIT",
   "dependencies": {
