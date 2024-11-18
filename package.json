@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "A simple TypeScript project boilerplate for Adekolu Samuel",
   "main": "dist/app.js",
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn build"
+    }
+  },
   "scripts": {
     "build": "tsc",
     "start": "node dist/app.js",
