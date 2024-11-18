@@ -2,7 +2,7 @@
   "compilerOptions": {
     "lib": ["es5", "es6"],
     "target": "ES2021",
-    "module": "ES6",
+    "module": "commonjs",
     "removeComments": true,
     "allowSyntheticDefaultImports": true,
     "outDir": "./build",
@@ -13,8 +13,8 @@
     "sourceMap": true,
     "skipLibCheck": true,
     "typeRoots": ["./node_modules/@types", "src/types"],
-    "types": ["jest"]
-    // "resolveJsonModule": true
+    "types": ["jest"],
+    "resolveJsonModule": true
   },
   "types": ["node", "jest"],
   "include": ["src/**/*", "config"],
