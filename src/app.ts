@@ -22,9 +22,15 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
 
 const startServer = async () => {
   try {
+    // Initialize the data source (commented out for now)
     // await initializeDataSource();
-    app.listen(3000, () => {
-      console.log("Server running on http://localhost:3000");
+    const IS_DEVELOPMENT = process.env.ISDEVELOPMENT === "true";
+    const BASE_URL = IS_DEVELOPMENT
+      ? process.env.DEV_URL
+      : process.env.PROD_URL;
+    const PORT = IS_DEVELOPMENT ? 3000 : process.env.PORT || 3000;
+    app.listen(PORT, () => {
+      console.log(`Server running at ${BASE_URL}`);
     });
   } catch (err) {
     console.error("Failed to start application:", err);
