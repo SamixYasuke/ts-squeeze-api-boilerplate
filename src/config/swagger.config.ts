@@ -5,8 +5,8 @@ dotenv.config();
 
 const isDevelopment = process.env.ISDEVELOPMENT === "true";
 const swaggerJsonUrl = isDevelopment
-  ? process.env.SWAGGER_JSON_URL_DEV
-  : process.env.SWAGGER_JSON_URL_PROD;
+  ? process.env.DEV_URL
+  : process.env.PROD_URL;
 
 const swaggerDefinition = {
   openapi: "3.1.0",
