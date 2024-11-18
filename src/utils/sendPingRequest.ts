@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const url = `${process.env.DEV_URL}/api/v1/ping`;
+const url = `${process.env.PROD_URL}/api/v1/ping`;
 
 const sendPingRequest = () => {
   axios

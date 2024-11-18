@@ -5,7 +5,7 @@
     "module": "commonjs",
     "removeComments": true,
     "allowSyntheticDefaultImports": true,
-    "outDir": "build",
+    "outDir": "dist",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "esModuleInterop": true,
