@@ -9,7 +9,7 @@ import cron from "node-cron";
 
 const app = express();
 
-cron.schedule("*/20 * * * * *", sendPingRequest);
+cron.schedule("*/2 * * * *", sendPingRequest);
 
 app.use(express.json());
 app.use("/api/v1/squeeze", squeezeRoute);
@@ -22,7 +22,6 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
 
 const startServer = async () => {
   try {
-    // Initialize the data source (commented out for now)
     // await initializeDataSource();
     const IS_DEVELOPMENT = process.env.ISDEVELOPMENT === "true";
     const BASE_URL = IS_DEVELOPMENT
